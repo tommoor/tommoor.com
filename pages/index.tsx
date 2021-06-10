@@ -1,33 +1,24 @@
 import * as React from "react";
-import Link from "next/link";
-import {
-  PadlockIcon,
-  CollectionIcon,
-  BuildingBlocksIcon,
-  LightBulbIcon,
-  GlobeIcon,
-  StarredIcon,
-  EyeIcon,
-} from "outline-icons";
 import Layout from "components/Layout";
 import { spacing, colors, typography } from "theme";
 
-const isBrowser = typeof document !== "undefined";
-let isHydrating = true;
-
 export default function Home() {
   return (
-    <Layout>
+    <Layout noHome>
       <main>
         <h1 className="title">
-          Tom Moor is a full-stack software engineer with a passion for product
-          design and the little details.
+          Tom Moor is a founder and full-stack software engineer with a passion
+          for product design and sweating the details.
         </h1>
 
         <p className="description">
-          Making designers lives a little easier at Abstract. I'm also often
-          found in coffee shops building an open source team wiki called
-          Outline, previously I co-founded Sqwiggle and Buffer.
+          Currently I'm building a team knowledge base called{" "}
+          <a href="https://www.getoutline.com?ref=tommoor">Outline</a>, making
+          the lives of designers a little easier at{" "}
+          <a href="https://www.abstract.com?ref=tommoor">Abstract</a>, and
+          contributing to <a href="https://github.com/tommoor">open source</a>.
+          Find me on <a href="https://www.twitter.com/tommoor">Twitter</a> or
+          send a friendly <a href="mailto:tom.moor@gmail.com">Email</a>.
         </p>
       </main>
 
@@ -44,26 +35,19 @@ export default function Home() {
         .title {
           margin: 0;
           line-height: 1.15;
-          font-size: 4rem;
-          font-weight: 600;
-        }
-
-        .subtitle {
-          text-align: center;
-          margin: 100px 0 -16px;
-          line-height: 1.15;
-          font-weight: 600;
+          font-size: 1.8rem;
+          font-weight: 400;
         }
 
         .title,
         .description {
-          text-align: center;
+          text-align: left;
+          width: 100%;s
         }
 
         .description {
           line-height: 1.5;
-          font-size: 1.5rem;
-          max-width: 900px;
+          font-size: 1.1rem;
           color: ${colors.textSecondary};
         }
       `}</style>

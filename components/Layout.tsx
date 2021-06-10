@@ -1,14 +1,11 @@
 import ReactGA from "react-ga";
 import * as React from "react";
 import Head from "next/head";
-import { darken } from "polished";
 import Footer from "components/Footer";
-import Hero from "components/Hero";
 import HeaderNavigation from "components/HeaderNavigation";
 import { spacing, colors, typography } from "theme";
-import { useRouter } from "next/router";
 
-ReactGA.initialize("UA-109435745-1");
+ReactGA.initialize("UA-1703053-5");
 
 type Props = {
   title?: string;
@@ -17,9 +14,8 @@ type Props = {
   color?: string;
   header?: React.ReactNode;
   hero?: React.ReactNode;
-  illustration?: string;
-  sidebar?: React.ReactNode;
   children: React.ReactNode;
+  noHome?: boolean;
 };
 
 export default function Layout({
@@ -27,14 +23,11 @@ export default function Layout({
   pageTitle,
   header,
   hero,
-  illustration,
-  sidebar,
   background = "transparent",
   color = "inherit",
+  noHome,
   children,
 }: Props) {
-  const router = useRouter();
-
   React.useEffect(() => {
     ReactGA.set({ page: window.location.pathname });
     ReactGA.pageview(window.location.pathname);
@@ -50,15 +43,7 @@ export default function Layout({
         <title>{fullTitle}</title>
         <link
           rel="shortcut icon"
-          type="image/png"
-          href="/favicon.png"
-          sizes="16x16"
-        />
-        <link
-          rel="shortcut icon"
-          type="image/png"
-          href="/favicon-32.png"
-          sizes="32x32"
+          href="//www.gravatar.com/avatar/166e0b975c36bbe15caa65209940035c.png"
         />
         <link
           rel="stylesheet"
@@ -93,12 +78,14 @@ export default function Layout({
           <div className="pure-g">
             <div className="pure-u-1-2 header-left"></div>
             <div className="pure-u-1-2 header-right">
-              <HeaderNavigation />
+              <HeaderNavigation noHome={noHome} />
             </div>
           </div>
         </div>
       </header>
-      <div className="page">{children}</div>
+      <div className="page">
+        <div className="content">{children}</div>
+      </div>
       <Footer />
       <style jsx>
         {`
@@ -134,14 +121,7 @@ export default function Layout({
 
           @media (max-width: 48em) {
             .content {
-              padding: 0;
-            }
-
-            .sidebar {
               padding: 0 ${spacing.medium};
-              margin: -${spacing.large} -5vw ${spacing.large};
-              background: ${darken(0.05, background)};
-              width: 100vw;
             }
           }
 
@@ -231,19 +211,10 @@ export default function Layout({
 
           @font-face {
             font-family: "HK Grotesk";
-            src: url("/fonts/HKGrotesk-SemiBold.eot") format("eot"),
-              url("/fonts/HKGrotesk-SemiBold.woff2") format("woff2"),
-              url("/fonts/HKGrotesk-SemiBold.woff") format("woff");
-            font-weight: 600;
-            font-style: normal;
-          }
-
-          @font-face {
-            font-family: "HK Grotesk";
             src: url("/fonts/HKGrotesk-Bold.eot") format("eot"),
               url("/fonts/HKGrotesk-Bold.woff2") format("woff2"),
               url("/fonts/HKGrotesk-Bold.woff") format("woff");
-            font-weight: 700;
+            font-weight: 600;
             font-style: normal;
           }
         `}

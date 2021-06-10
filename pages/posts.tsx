@@ -19,9 +19,9 @@ export default function Posts({ posts }) {
   const sortedYears = Object.keys(years).reverse();
 
   return (
-    <Layout title="Blog" background="#F4F7FA">
-      {posts.map((post, index) => (
-        <article key={post.slug} className="compact">
+    <Layout title="Blog">
+      {posts.map((post) => (
+        <article key={post.slug}>
           <a id={format(new Date(post.date), "yyyy-MMMM")} />
           <a id={post.slug} />
           <h2>
@@ -43,17 +43,17 @@ export default function Posts({ posts }) {
           }
 
           article {
-            padding: 4em 0;
-            border-bottom: 1px solid ${colors.greyMid};
+            padding: 0;
+            border-bottom: 0;
+          }
+
+          article h2 {
+            font-size: 1.4em;
+            line-height: 1.2;
           }
 
           article:first-child {
             padding-top: 0;
-          }
-
-          article.compact {
-            padding: 0;
-            border-bottom: 0;
           }
         `}
       </style>
