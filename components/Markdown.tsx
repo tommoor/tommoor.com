@@ -24,6 +24,10 @@ export default function Markdown(props) {
             font-size: 16px;
           }
 
+          .md :global(a: hover) {
+            text-decoration: underline;
+          }
+
           .md :global(blockquote p) {
             margin: 0;
           }

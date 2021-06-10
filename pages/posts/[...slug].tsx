@@ -5,7 +5,7 @@ import Metadata from "components/PostMetadata";
 
 export default function Changelog({ title, date, tag, content }) {
   return (
-    <Layout title="Blog" pageTitle={`${title} – Blog`}>
+    <Layout title="Blog" pageTitle={`${title} – Blog`} back="/posts">
       <h1>{title}</h1>
       <Metadata tag={tag} date={date} />
       <Markdown children={content} />

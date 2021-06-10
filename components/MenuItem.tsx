@@ -1,5 +1,4 @@
 import * as React from "react";
-import Link from "next/link";
 import { spacing, colors } from "theme";
 
 export default class MenuItem extends React.Component<{
@@ -23,38 +22,23 @@ export default class MenuItem extends React.Component<{
             a {
               display: flex;
               align-items: center;
-              padding: ${spacing.small} ${spacing.medium};
+              padding: ${spacing.small} 0;
+              margin: 0 ${spacing.medium};
               color: rgba(0, 0, 0, 0.75);
               text-decoration: none;
               white-space: nowrap;
-              border-radius: 4px;
               min-height: 40px;
+              border-bottom: 2px solid transparent;
               font-weight: 500;
               position: relative;
               user-select: none;
               overflow: hidden;
+              transition: all 100ms ease-in-out;
             }
 
-            a.menu-with-icon {
-              padding-right: 8px;
-              position: relative;
-              z-index: 3;
-            }
-
-            a.launch,
-            a.highlighted,
             a:hover {
-              background: ${top ? "rgba(0, 0, 0, 0.1)" : colors.primary};
-              color: ${top ? colors.almostBlack : colors.white};
-            }
-
-            a.open,
-            a.open:hover {
-              background: none;
-            }
-
-            a.launch {
-              width: 160px;
+              border-bottom: 2px solid ${colors.primary};
+              color: ${colors.primary};
             }
           `}
         </style>

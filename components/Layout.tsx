@@ -1,8 +1,10 @@
 import ReactGA from "react-ga";
+import Link from "next/link";
 import * as React from "react";
 import Head from "next/head";
 import Footer from "components/Footer";
 import Navigation from "components/Navigation";
+import MenuItem from "components/MenuItem";
 import { spacing, colors, typography } from "theme";
 
 ReactGA.initialize("UA-1703053-5");
@@ -14,6 +16,7 @@ type Props = {
   color?: string;
   header?: React.ReactNode;
   hero?: React.ReactNode;
+  back?: string;
   children: React.ReactNode;
   noHome?: boolean;
 };
@@ -25,6 +28,7 @@ export default function Layout({
   hero,
   background = "transparent",
   color = "inherit",
+  back,
   noHome,
   children,
 }: Props) {
@@ -76,7 +80,15 @@ export default function Layout({
       <header className={(header || hero) && "with-header"}>
         <div className="container">
           <div className="pure-g">
-            <div className="pure-u-1-2 header-left"></div>
+            <div className="pure-u-1-2 header-left">
+              {back && (
+                <Link href={back} passHref>
+                  <MenuItem>
+                    <span className="back">↩</span>&nbsp;Back
+                  </MenuItem>
+                </Link>
+              )}
+            </div>
             <div className="pure-u-1-2 header-right">
               <Navigation noHome={noHome} />
             </div>
@@ -92,6 +104,11 @@ export default function Layout({
           header {
             color: ${color};
             background: ${background};
+          }
+
+          .back {
+            position: relative;
+            top: 2px;
           }
 
           .header-left,
@@ -116,19 +133,13 @@ export default function Layout({
           }
 
           .content {
-            padding: 0 ${spacing.large};
+            padding: 0 ${spacing.large} ${spacing.xlarge};
           }
 
           @media (max-width: 48em) {
             .content {
               padding: 0 ${spacing.medium};
             }
-          }
-
-          img {
-            height: 200px;
-            float: right;
-            opacity: 0.95;
           }
         `}
       </style>
