@@ -14,6 +14,7 @@ export const colors = {
   greyMid: "#C5CCD3",
   text: "#181A1B",
   textSecondary: "#5E6573",
+  textTertiary: "#C5CCD3",
 };
 
 export const typography = {
