@@ -1,6 +1,5 @@
 import * as React from "react";
 import Link from "next/link";
-import { getCookie } from "tiny-cookie";
 import { spacing, colors } from "theme";
 
 const isBrowser = typeof document !== "undefined";
@@ -66,13 +65,6 @@ class MenuItem extends React.Component<{
   }
 }
 
-function getSessions() {
-  if (isBrowser) {
-    return JSON.parse(getCookie("sessions") || "{}");
-  }
-  return {};
-}
-
 export default function HeaderNavigation() {
   const ref = React.useRef();
 
@@ -85,8 +77,13 @@ export default function HeaderNavigation() {
           </Link>
         </li>
         <li>
-          <Link href="/feed.xml" passHref>
+          <Link href="/rss.xml" passHref>
             <MenuItem>RSS</MenuItem>
+          </Link>
+        </li>
+        <li>
+          <Link href="https://www.twitter.com/tommoor" passHref>
+            <MenuItem>Twitter</MenuItem>
           </Link>
         </li>
       </ul>

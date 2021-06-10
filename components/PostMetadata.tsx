@@ -22,8 +22,8 @@ export default function PostMetadata({ date, tag }) {
         .metadata {
           font-family: ${typography.fontFamilyMono};
           color: ${colors.textSecondary};
-          font-size: 0.8em;
-          margin-top: -1.5em;
+          font-size: 0.9em;
+          margin-top: -1em;
           margin-bottom: 2em;
         }
 

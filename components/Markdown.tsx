@@ -1,14 +1,17 @@
 import ReactMarkdown from "react-markdown";
+import rehypeRaw from "rehype-raw";
+import { colors } from "theme";
 
 export default function Markdown(props) {
   return (
     <div className="md">
-      <ReactMarkdown {...props} />
+      <ReactMarkdown {...props} rehypePlugins={[rehypeRaw]} />
       <style jsx>
         {`
           .md {
-            font-size: 1.2em;
+            font-size: 1.1em;
             line-height: 1.4;
+            color: ${colors.text};
           }
 
           .md :global(blockquote) {
@@ -28,14 +31,13 @@ export default function Markdown(props) {
           .md :global(img) {
             display: block;
             max-width: 100%;
-            zoom: 50%;
             box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
             border-radius: 8px;
             margin: 2em auto;
           }
 
-          .md :global(img[title="@1x"]) {
-            zoom: 100%;
+          .md :global(img[title="@2x"]) {
+            zoom: 50%;
           }
 
           .md :global(code) {

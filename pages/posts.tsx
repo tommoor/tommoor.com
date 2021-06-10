@@ -4,12 +4,11 @@ import Link from "next/link";
 import { format } from "date-fns";
 import { getPosts } from "lib/posts";
 import Layout from "components/Layout";
-import Markdown from "components/Markdown";
 import Metadata from "components/PostMetadata";
 import { colors } from "theme";
 import { generateRSS } from "lib/rss";
 
-export default function Changelog({ posts }) {
+export default function Posts({ posts }) {
   const months = groupBy(posts, (post) =>
     format(new Date(post.date), "MMMM, yyyy")
   );
@@ -20,18 +19,17 @@ export default function Changelog({ posts }) {
   const sortedYears = Object.keys(years).reverse();
 
   return (
-    <Layout title="Changelog" background="#F4F7FA">
+    <Layout title="Blog" background="#F4F7FA">
       {posts.map((post, index) => (
-        <article key={post.slug} className={index < 20 ? "" : "compact"}>
+        <article key={post.slug} className="compact">
           <a id={format(new Date(post.date), "yyyy-MMMM")} />
           <a id={post.slug} />
           <h2>
-            <Link href={`/changelog/${post.slug}`}>
+            <Link href={`/posts/${post.slug}`}>
               <a className="heading">{post.title}</a>
             </Link>
           </h2>
           <Metadata tag={post.tag} date={post.date} />
-          {index < 20 && <Markdown source={post.content} />}
         </article>
       ))}
       <style jsx>

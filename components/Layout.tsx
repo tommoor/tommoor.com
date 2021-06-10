@@ -124,6 +124,8 @@ export default function Layout({
 
           .page {
             min-height: calc(100vh - 300px);
+            max-width: 700px;
+            margin: 0 auto;
           }
 
           .content {
@@ -180,10 +182,11 @@ export default function Layout({
           }
 
           h1 {
-            font-size: 3em;
+            font-size: 2em;
           }
           h2 {
-            font-size: 2em;
+            font-size: 1.2em;
+            margin-top: 1.4em;
           }
 
           h1,
