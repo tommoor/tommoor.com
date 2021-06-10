@@ -1,6 +1,6 @@
 import * as React from "react";
 import Layout from "components/Layout";
-import { spacing, colors, typography } from "theme";
+import { colors } from "theme";
 
 export default function Home() {
   return (
@@ -13,12 +13,22 @@ export default function Home() {
 
         <p className="description">
           Currently I'm building a team knowledge base called{" "}
-          <a href="https://www.getoutline.com?ref=tommoor">Outline</a>, making
-          the lives of designers a little easier at{" "}
-          <a href="https://www.abstract.com?ref=tommoor">Abstract</a>, and
-          contributing to <a href="https://github.com/tommoor">open source</a>.
-          Find me on <a href="https://www.twitter.com/tommoor">Twitter</a> or
-          send a friendly <a href="mailto:tom.moor@gmail.com">Email</a>.
+          <a href="https://www.getoutline.com?ref=tommoor" target="_blank">
+            Outline
+          </a>
+          , making the lives of designers a little easier at{" "}
+          <a href="https://www.abstract.com?ref=tommoor" target="_blank">
+            Abstract
+          </a>
+          , and contributing to{" "}
+          <a href="https://github.com/tommoor" target="_blank">
+            open source
+          </a>
+          . Find me on{" "}
+          <a href="https://www.twitter.com/tommoor" target="_blank">
+            Twitter
+          </a>{" "}
+          or send a friendly <a href="mailto:tom.moor@gmail.com">Email</a>.
         </p>
       </main>
 

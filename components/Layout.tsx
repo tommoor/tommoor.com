@@ -2,7 +2,7 @@ import ReactGA from "react-ga";
 import * as React from "react";
 import Head from "next/head";
 import Footer from "components/Footer";
-import HeaderNavigation from "components/HeaderNavigation";
+import Navigation from "components/Navigation";
 import { spacing, colors, typography } from "theme";
 
 ReactGA.initialize("UA-1703053-5");
@@ -78,7 +78,7 @@ export default function Layout({
           <div className="pure-g">
             <div className="pure-u-1-2 header-left"></div>
             <div className="pure-u-1-2 header-right">
-              <HeaderNavigation noHome={noHome} />
+              <Navigation noHome={noHome} />
             </div>
           </div>
         </div>
