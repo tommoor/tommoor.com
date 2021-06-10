@@ -81,13 +81,15 @@ export default function Layout({
         <div className="container">
           <div className="pure-g">
             <div className="pure-u-1-2 header-left">
-              {back && (
-                <Link href={back} passHref>
-                  <MenuItem>
-                    <span className="back">↩</span>&nbsp;Back
-                  </MenuItem>
-                </Link>
-              )}
+              <div className="back-link">
+                {back && (
+                  <Link href={back} passHref>
+                    <MenuItem>
+                      <span className="back">↩</span>&nbsp;Back
+                    </MenuItem>
+                  </Link>
+                )}
+              </div>
             </div>
             <div className="pure-u-1-2 header-right">
               <Navigation noHome={noHome} />
@@ -139,6 +141,9 @@ export default function Layout({
           @media (max-width: 48em) {
             .content {
               padding: 0 ${spacing.medium};
+            }
+            .back-link {
+              display: none;
             }
           }
         `}

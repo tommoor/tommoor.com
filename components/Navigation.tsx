@@ -48,7 +48,6 @@ export default function Navigation({ noHome }) {
 
           li {
             display: block;
-            transition-duration: 0.5s;
             position: relative;
             margin: 0 0 0 ${spacing.medium};
           }
@@ -62,6 +61,9 @@ export default function Navigation({ noHome }) {
           }
 
           @media (max-width: 48em) {
+            li {
+              margin: 0 0 0 ${spacing.small};
+            }
             li.hidden-on-desktop {
               display: block;
             }
