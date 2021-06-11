@@ -19,5 +19,6 @@ We were able to finally get this down to a _reduction_ in the original bundle si
 - Restore the webpack config for `mainFields` to the default value so that it properly considered dependencies exporting es6 modules
 - Ensuring the components imported as an async chunk in one place are also imported async elsewhere
 - Changing the import syntax from `import format from "date-fns/format"` to `import { format } from "date-fns"`
+- Re-configuring webpack splitChunks to [reuse existing chunks](https://github.com/outline/outline/commit/a6d4d4ea3679c2159302a5bb8b08403b5a4a50ce#diff-1fb26bc12ac780c7ad7325730ed09fc4c2c3d757c276c3dacc44bfe20faf166fR112)
 
 I think this really speaks to the importance of having bundle size exposed in the PR process!
