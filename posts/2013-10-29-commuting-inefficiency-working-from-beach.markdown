@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Commuting, Inefficiency and Working From The Beach"
+title: "Commuting, inefficiency and working from the beach"
 date: 2013-10-29 09:00 -0800
 tags:
 - startups

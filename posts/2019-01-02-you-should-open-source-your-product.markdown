@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "You Should Open Source Your Product"
+title: "You should open source your product"
 date: 2019-01-01 21:00
 tags:
 - open source

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Rollercoaster"
+title: "The startup rollercoaster"
 date: 2015-05-24 16:00 -0800
 tags:
 - startups

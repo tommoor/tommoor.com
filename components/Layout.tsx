@@ -70,12 +70,15 @@ export default function Layout({
         <meta name="theme-color" content="#FFFFFF" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="referrer" content="origin" />
+        <meta name="site_name" property="og:site_name" content="Tom Moor" />
         <meta name="type" property="og:type" content="website" />
         <meta
           name="title"
           property="og:title"
           content={resolvedTitle || siteTitle}
         />
+        <meta name="twitter:domain" content="tommoor.com" />
+        <meta name="twitter:title" content={resolvedTitle || siteTitle} />
       </Head>
       <header className={(header || hero) && "with-header"}>
         <div className="container">

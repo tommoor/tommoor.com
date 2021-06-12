@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Reclaim Your Privacy"
+title: "Reclaiming your privacy"
 date: 2017-01-07 21:00 -0800
 tags:
 - privacy

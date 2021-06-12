@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Don't Grow Too Fast"
+title: "Don't grow too fast"
 date: 2015-01-17 10:00 -0800
 tags:
 - startups

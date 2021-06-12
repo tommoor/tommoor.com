@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Trouble with Timezones"
+title: "The trouble with timezones"
 date: 2013-11-18 09:00 -0800
 tags:
 - startups
