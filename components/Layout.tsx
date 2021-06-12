@@ -77,6 +77,8 @@ export default function Layout({
           property="og:title"
           content={resolvedTitle || siteTitle}
         />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content="@tommoor" />
         <meta name="twitter:domain" content="tommoor.com" />
         <meta name="twitter:title" content={resolvedTitle || siteTitle} />
       </Head>
