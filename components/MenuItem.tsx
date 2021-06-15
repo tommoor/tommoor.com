@@ -10,11 +10,11 @@ export default class MenuItem extends React.Component<{
   top?: boolean;
 }> {
   render() {
-    const { children, href, top, onClick, className } = this.props;
+    const { children, href, top, onClick, className, ...rest } = this.props;
 
     return (
       <>
-        <a href={href} onClick={onClick} className={className}>
+        <a href={href} onClick={onClick} className={className} {...rest}>
           {children}
         </a>
         <style jsx>
