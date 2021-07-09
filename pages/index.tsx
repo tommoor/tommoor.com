@@ -15,14 +15,14 @@ export default function Home() {
           Currently I'm building a team knowledge base called{" "}
           <a href="https://www.getoutline.com?ref=tommoor" target="_blank">
             Outline
-          </a>
-          , making the lives of designers a little easier at{" "}
-          <a href="https://www.abstract.com?ref=tommoor" target="_blank">
-            Abstract
-          </a>
-          , and contributing to{" "}
+          </a>{" "}
+          and contributing to{" "}
           <a href="https://github.com/tommoor" target="_blank">
             open source
+          </a>
+          . Recently I was principal engineer at{" "}
+          <a href="https://www.abstract.com?ref=tommoor" target="_blank">
+            Abstract
           </a>
           . Find me on{" "}
           <a href="https://www.twitter.com/tommoor" target="_blank">
