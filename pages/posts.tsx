@@ -1,4 +1,3 @@
-import { map, groupBy } from "lodash";
 import fs from "fs";
 import Link from "next/link";
 import { format } from "date-fns";
@@ -9,14 +8,6 @@ import { colors } from "theme";
 import { generateRSS } from "lib/rss";
 
 export default function Posts({ posts }) {
-  const months = groupBy(posts, (post) =>
-    format(new Date(post.date), "MMMM, yyyy")
-  );
-  const years = groupBy(months, (posts) =>
-    format(new Date(posts[0].date), "yyyy")
-  );
-
-  const sortedYears = Object.keys(years).reverse();
   let previousYear;
 
   return (

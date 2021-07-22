@@ -5,7 +5,9 @@ import Layout from "components/Layout";
 import Metadata from "components/PostMetadata";
 
 declare global {
-  interface Window { Prism: any; }
+  interface Window {
+    Prism: any;
+  }
 }
 
 export default function Changelog({ title, date, tag, content }) {

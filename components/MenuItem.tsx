@@ -7,10 +7,9 @@ export default class MenuItem extends React.Component<{
   onClick?: (event) => void;
   className?: string;
   target?: string;
-  top?: boolean;
 }> {
   render() {
-    const { children, href, top, onClick, className, ...rest } = this.props;
+    const { children, href, onClick, className, ...rest } = this.props;
 
     return (
       <>
