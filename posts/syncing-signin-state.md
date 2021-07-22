@@ -22,16 +22,12 @@ Outline is built using [MobX](https://mobx.js.org/) for state management. Local 
 
 ### Syncing MobX to localStorage
 
-MobX has the concept of reactions; side effects that happen in response to changes in observed data. We use a handy MobX method, [autorun](https://mobx.js.org/reactions.html#autorun) that runs an effect whenever any of it’s dependencies change in order to write state to localStorage.
+MobX has the concept of reactions; side effects that happen in response to changes in observed data. We use a handy MobX method, [autorun](https://mobx.js.org/reactions.html#autorun) that runs an effect whenever any of it’s dependencies change in order to write state to localStorage. For example, within the store constructor…
 
 
 ```javascript
 autorun(() => {
-  try {
-    localStorage.setItem(AUTH_STORE, JSON.stringify(this.data));
-  } catch (_) {
-    // no-op Safari private mode
-  }
+  localStorage.setItem("AUTH_STORE", JSON.stringify(this.data));
 });
 ```
 
@@ -45,12 +41,12 @@ We check that the changed key matches our key for persisting auth data, parse th
 
 ```javascript
 window.addEventListener("storage", (event) => {
-  if (event.key === AUTH_STORE) {
+  if (event.key === "AUTH_STORE") {
     const data = JSON.parse(event.newValue);
 
     // If we're not signed in then hydrate from the received data, otherwise if
     // we are signed in and the received data contains no user then sign out
-    if (this.authenticated) {
+    if (isAuthenticated) {
       if (data.user === null) {
         this.logout();
       }
