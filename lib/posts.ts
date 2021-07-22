@@ -27,7 +27,7 @@ export function getPost(fileName: string) {
 
 export function getPosts() {
   const fileNames = fs.readdirSync(path.join(process.cwd(), "posts"));
-  let posts = [];
+  const posts = [];
 
   for (const fileName of fileNames) {
     if ([".DS_Store", "..", "."].includes(fileName)) {
