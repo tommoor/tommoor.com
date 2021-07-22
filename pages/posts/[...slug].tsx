@@ -1,9 +1,20 @@
+import * as React from "react";
 import { getPost, getPosts } from "lib/posts";
 import Markdown from "components/Markdown";
 import Layout from "components/Layout";
 import Metadata from "components/PostMetadata";
 
+declare global {
+  interface Window { Prism: any; }
+}
+
 export default function Changelog({ title, date, tag, content }) {
+  React.useLayoutEffect(() => {
+    // Rerun Prism syntax highlighting on the current page
+    if (window.Prism) {
+      window.Prism.highlightAll();
+    }
+  }, []);
   return (
     <Layout title="Blog" pageTitle={`${title} – Blog`} back="/posts">
       <h1>{title}</h1>

@@ -81,7 +81,14 @@ export default function Layout({
         <meta name="twitter:site" content="@tommoor" />
         <meta name="twitter:domain" content="tommoor.com" />
         <meta name="twitter:title" content={resolvedTitle || siteTitle} />
+        <link
+          href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.css"
+          rel="stylesheet"
+        />
       </Head>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-core.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/plugins/autoloader/prism-autoloader.min.js"></script>
+
       <header className={(header || hero) && "with-header"}>
         <div className="container">
           <div className="pure-g">
