@@ -1,17 +1,17 @@
 
   <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-      <title>Outline Changelog</title>
-      <link>https://www.getoutline.com/changelog</link>
-      <description>New updates and improvements to Outline. Follow us on twitter @outlinewiki to find out when features are released.</description>
+      <title>Blog by Tom Moor</title>
+      <link>https://www.tommoor.com/posts</link>
+      <description>Blog posts by Tom Moor</description>
       <language>en</language>
       <lastBuildDate>Thu, 22 Jul 2021 00:00:00 GMT</lastBuildDate>
-      <atom:link href="https://www.getoutline.com/rss.xml" rel="self" type="application/rss+xml"/>
+      <atom:link href="https://www.tommoor.com/rss.xml" rel="self" type="application/rss+xml"/>
       
   <item>
     <guid>syncing-signin-state</guid>
     <title>Syncing sign-in state</title>
-    <link>https://www.getoutline.com/changelog/syncing-signin-state</link>
+    <link>https://www.tommoor.com/posts/syncing-signin-state</link>
     <description><![CDATA[ <div class="jsx-1234508262 md" data-reactroot=""></div> ]]></description>
     <pubDate>Thu, 22 Jul 2021 00:00:00 GMT</pubDate>
   </item>
@@ -19,7 +19,7 @@
   <item>
     <guid>monitoring-bundle-size</guid>
     <title>Why you need bundle size monitoring</title>
-    <link>https://www.getoutline.com/changelog/monitoring-bundle-size</link>
+    <link>https://www.tommoor.com/posts/monitoring-bundle-size</link>
     <description><![CDATA[ <div class="jsx-1234508262 md" data-reactroot=""></div> ]]></description>
     <pubDate>Sat, 12 Jun 2021 00:00:00 GMT</pubDate>
   </item>
@@ -27,7 +27,7 @@
   <item>
     <guid>back-to-blogging</guid>
     <title>Back to blogging</title>
-    <link>https://www.getoutline.com/changelog/back-to-blogging</link>
+    <link>https://www.tommoor.com/posts/back-to-blogging</link>
     <description><![CDATA[ <div class="jsx-1234508262 md" data-reactroot=""></div> ]]></description>
     <pubDate>Thu, 10 Jun 2021 00:00:00 GMT</pubDate>
   </item>
@@ -35,15 +35,15 @@
   <item>
     <guid>2019/01/02/you-should-open-source-your-product</guid>
     <title>You should open source your product</title>
-    <link>https://www.getoutline.com/changelog/2019/01/02/you-should-open-source-your-product</link>
+    <link>https://www.tommoor.com/posts/2019/01/02/you-should-open-source-your-product</link>
     <description><![CDATA[ <div class="jsx-1234508262 md" data-reactroot=""></div> ]]></description>
-    <pubDate>Wed, 02 Jan 2019 02:00:00 GMT</pubDate>
+    <pubDate>Tue, 01 Jan 2019 20:00:00 GMT</pubDate>
   </item>
 
   <item>
     <guid>2017/01/02/getting-your-privacy-back</guid>
     <title>Reclaiming your privacy</title>
-    <link>https://www.getoutline.com/changelog/2017/01/02/getting-your-privacy-back</link>
+    <link>https://www.tommoor.com/posts/2017/01/02/getting-your-privacy-back</link>
     <description><![CDATA[ <div class="jsx-1234508262 md" data-reactroot=""></div> ]]></description>
     <pubDate>Sun, 08 Jan 2017 05:00:00 GMT</pubDate>
   </item>
@@ -51,7 +51,7 @@
   <item>
     <guid>2015/09/21/lessons-learnt-building-team-products</guid>
     <title>Lessons learnt building team communication products</title>
-    <link>https://www.getoutline.com/changelog/2015/09/21/lessons-learnt-building-team-products</link>
+    <link>https://www.tommoor.com/posts/2015/09/21/lessons-learnt-building-team-products</link>
     <description><![CDATA[ <div class="jsx-1234508262 md" data-reactroot=""></div> ]]></description>
     <pubDate>Mon, 21 Sep 2015 18:00:00 GMT</pubDate>
   </item>
@@ -59,7 +59,7 @@
   <item>
     <guid>2015/05/24/the-rollercoaster</guid>
     <title>The startup rollercoaster</title>
-    <link>https://www.getoutline.com/changelog/2015/05/24/the-rollercoaster</link>
+    <link>https://www.tommoor.com/posts/2015/05/24/the-rollercoaster</link>
     <description><![CDATA[ <div class="jsx-1234508262 md" data-reactroot=""></div> ]]></description>
     <pubDate>Mon, 25 May 2015 00:00:00 GMT</pubDate>
   </item>
@@ -67,7 +67,7 @@
   <item>
     <guid>2015/01/17/dont-grow-too-fast</guid>
     <title>Don't grow too fast</title>
-    <link>https://www.getoutline.com/changelog/2015/01/17/dont-grow-too-fast</link>
+    <link>https://www.tommoor.com/posts/2015/01/17/dont-grow-too-fast</link>
     <description><![CDATA[ <div class="jsx-1234508262 md" data-reactroot=""></div> ]]></description>
     <pubDate>Sat, 17 Jan 2015 18:00:00 GMT</pubDate>
   </item>
@@ -75,7 +75,7 @@
   <item>
     <guid>2015/01/10/year-in-review</guid>
     <title>A Year In Review</title>
-    <link>https://www.getoutline.com/changelog/2015/01/10/year-in-review</link>
+    <link>https://www.tommoor.com/posts/2015/01/10/year-in-review</link>
     <description><![CDATA[ <div class="jsx-1234508262 md" data-reactroot=""></div> ]]></description>
     <pubDate>Sun, 11 Jan 2015 01:00:00 GMT</pubDate>
   </item>
@@ -83,7 +83,7 @@
   <item>
     <guid>2013/11/18/the-trouble-with-timezones</guid>
     <title>The trouble with timezones</title>
-    <link>https://www.getoutline.com/changelog/2013/11/18/the-trouble-with-timezones</link>
+    <link>https://www.tommoor.com/posts/2013/11/18/the-trouble-with-timezones</link>
     <description><![CDATA[ <div class="jsx-1234508262 md" data-reactroot=""></div> ]]></description>
     <pubDate>Mon, 18 Nov 2013 17:00:00 GMT</pubDate>
   </item>
@@ -91,7 +91,7 @@
   <item>
     <guid>2013/10/29/commuting-inefficiency-working-from-beach</guid>
     <title>Commuting, inefficiency and working from the beach</title>
-    <link>https://www.getoutline.com/changelog/2013/10/29/commuting-inefficiency-working-from-beach</link>
+    <link>https://www.tommoor.com/posts/2013/10/29/commuting-inefficiency-working-from-beach</link>
     <description><![CDATA[ <div class="jsx-1234508262 md" data-reactroot=""></div> ]]></description>
     <pubDate>Tue, 29 Oct 2013 17:00:00 GMT</pubDate>
   </item>
@@ -99,7 +99,7 @@
   <item>
     <guid>2013/09/06/lessons-learnt-raising-a-million-dollar-seed-round</guid>
     <title>Lessons Learnt Raising Our Million Dollar Seed Round</title>
-    <link>https://www.getoutline.com/changelog/2013/09/06/lessons-learnt-raising-a-million-dollar-seed-round</link>
+    <link>https://www.tommoor.com/posts/2013/09/06/lessons-learnt-raising-a-million-dollar-seed-round</link>
     <description><![CDATA[ <div class="jsx-1234508262 md" data-reactroot=""></div> ]]></description>
     <pubDate>Sat, 07 Sep 2013 06:06:00 GMT</pubDate>
   </item>
@@ -107,7 +107,7 @@
   <item>
     <guid>2013/06/25/pricing-that-scales</guid>
     <title>Pricing That Scales</title>
-    <link>https://www.getoutline.com/changelog/2013/06/25/pricing-that-scales</link>
+    <link>https://www.tommoor.com/posts/2013/06/25/pricing-that-scales</link>
     <description><![CDATA[ <div class="jsx-1234508262 md" data-reactroot=""></div> ]]></description>
     <pubDate>Wed, 26 Jun 2013 00:00:00 GMT</pubDate>
   </item>
@@ -115,7 +115,7 @@
   <item>
     <guid>2013/06/13/how-to-build-company-transparency-and-reduce-email</guid>
     <title>Build Company Transparency and Reduce Email Using WordPress P2</title>
-    <link>https://www.getoutline.com/changelog/2013/06/13/how-to-build-company-transparency-and-reduce-email</link>
+    <link>https://www.tommoor.com/posts/2013/06/13/how-to-build-company-transparency-and-reduce-email</link>
     <description><![CDATA[ <div class="jsx-1234508262 md" data-reactroot=""></div> ]]></description>
     <pubDate>Fri, 14 Jun 2013 00:00:00 GMT</pubDate>
   </item>
@@ -123,7 +123,7 @@
   <item>
     <guid>2013/04/29/why-internal-dogfooding-matters-so-much</guid>
     <title>Why Internal Dogfooding Matters So Much</title>
-    <link>https://www.getoutline.com/changelog/2013/04/29/why-internal-dogfooding-matters-so-much</link>
+    <link>https://www.tommoor.com/posts/2013/04/29/why-internal-dogfooding-matters-so-much</link>
     <description><![CDATA[ <div class="jsx-1234508262 md" data-reactroot=""></div> ]]></description>
     <pubDate>Tue, 30 Apr 2013 00:00:00 GMT</pubDate>
   </item>
@@ -131,7 +131,7 @@
   <item>
     <guid>2013/04/13/the-future</guid>
     <title>The Future</title>
-    <link>https://www.getoutline.com/changelog/2013/04/13/the-future</link>
+    <link>https://www.tommoor.com/posts/2013/04/13/the-future</link>
     <description><![CDATA[ <div class="jsx-1234508262 md" data-reactroot=""></div> ]]></description>
     <pubDate>Sun, 14 Apr 2013 00:00:00 GMT</pubDate>
   </item>
@@ -139,7 +139,7 @@
   <item>
     <guid>2013/07/09/discover-what-people-want</guid>
     <title>Ask, Listen, Observe, Distill</title>
-    <link>https://www.getoutline.com/changelog/2013/07/09/discover-what-people-want</link>
+    <link>https://www.tommoor.com/posts/2013/07/09/discover-what-people-want</link>
     <description><![CDATA[ <div class="jsx-1234508262 md" data-reactroot=""></div> ]]></description>
     <pubDate>Mon, 11 Mar 2013 00:00:00 GMT</pubDate>
   </item>
@@ -147,7 +147,7 @@
   <item>
     <guid>2013/03/10/hacker-new</guid>
     <title>Hacker New</title>
-    <link>https://www.getoutline.com/changelog/2013/03/10/hacker-new</link>
+    <link>https://www.tommoor.com/posts/2013/03/10/hacker-new</link>
     <description><![CDATA[ <div class="jsx-1234508262 md" data-reactroot=""></div> ]]></description>
     <pubDate>Mon, 11 Mar 2013 00:00:00 GMT</pubDate>
   </item>
@@ -155,7 +155,7 @@
   <item>
     <guid>2013/03/09/there-are-always-more-users</guid>
     <title>There Are Always More Users</title>
-    <link>https://www.getoutline.com/changelog/2013/03/09/there-are-always-more-users</link>
+    <link>https://www.tommoor.com/posts/2013/03/09/there-are-always-more-users</link>
     <description><![CDATA[ <div class="jsx-1234508262 md" data-reactroot=""></div> ]]></description>
     <pubDate>Sat, 09 Mar 2013 08:00:00 GMT</pubDate>
   </item>
@@ -163,7 +163,7 @@
   <item>
     <guid>2012/11/30/decisions-decisions</guid>
     <title>Decisions, Decisions</title>
-    <link>https://www.getoutline.com/changelog/2012/11/30/decisions-decisions</link>
+    <link>https://www.tommoor.com/posts/2012/11/30/decisions-decisions</link>
     <description><![CDATA[ <div class="jsx-1234508262 md" data-reactroot=""></div> ]]></description>
     <pubDate>Fri, 30 Nov 2012 08:00:00 GMT</pubDate>
   </item>
@@ -171,7 +171,7 @@
   <item>
     <guid>2012/11/18/an-amazing-way-to-get-customer-feedback-and-build-a</guid>
     <title>An Amazing Way to Get Customer Feedback and Build a Community</title>
-    <link>https://www.getoutline.com/changelog/2012/11/18/an-amazing-way-to-get-customer-feedback-and-build-a</link>
+    <link>https://www.tommoor.com/posts/2012/11/18/an-amazing-way-to-get-customer-feedback-and-build-a</link>
     <description><![CDATA[ <div class="jsx-1234508262 md" data-reactroot=""></div> ]]></description>
     <pubDate>Sun, 18 Nov 2012 08:00:00 GMT</pubDate>
   </item>
@@ -179,7 +179,7 @@
   <item>
     <guid>2012/08/25/sign-up-or-sign-in-does-it-even-matter</guid>
     <title>Sign Up or Sign In, Does it Even Matter?</title>
-    <link>https://www.getoutline.com/changelog/2012/08/25/sign-up-or-sign-in-does-it-even-matter</link>
+    <link>https://www.tommoor.com/posts/2012/08/25/sign-up-or-sign-in-does-it-even-matter</link>
     <description><![CDATA[ <div class="jsx-1234508262 md" data-reactroot=""></div> ]]></description>
     <pubDate>Sat, 25 Aug 2012 08:00:00 GMT</pubDate>
   </item>
@@ -187,7 +187,7 @@
   <item>
     <guid>2012/07/31/how-we-increased-our-conversion-to-paying-users-by-171</guid>
     <title>How We Increased Our Conversion to Paying Users by 171% </title>
-    <link>https://www.getoutline.com/changelog/2012/07/31/how-we-increased-our-conversion-to-paying-users-by-171</link>
+    <link>https://www.tommoor.com/posts/2012/07/31/how-we-increased-our-conversion-to-paying-users-by-171</link>
     <description><![CDATA[ <div class="jsx-1234508262 md" data-reactroot=""></div> ]]></description>
     <pubDate>Tue, 31 Jul 2012 08:00:00 GMT</pubDate>
   </item>
@@ -195,7 +195,7 @@
   <item>
     <guid>2012/07/11/how-to-use-notifications-and-alerts-to-give-your</guid>
     <title>How to Use Notifications and Alerts to Give Your Startup an Edge</title>
-    <link>https://www.getoutline.com/changelog/2012/07/11/how-to-use-notifications-and-alerts-to-give-your</link>
+    <link>https://www.tommoor.com/posts/2012/07/11/how-to-use-notifications-and-alerts-to-give-your</link>
     <description><![CDATA[ <div class="jsx-1234508262 md" data-reactroot=""></div> ]]></description>
     <pubDate>Wed, 11 Jul 2012 08:00:00 GMT</pubDate>
   </item>
@@ -203,7 +203,7 @@
   <item>
     <guid>2012/06/17/scaling-a-lean-startup-the-story-so-far</guid>
     <title>Scaling a Lean Startup, The Story So Far. </title>
-    <link>https://www.getoutline.com/changelog/2012/06/17/scaling-a-lean-startup-the-story-so-far</link>
+    <link>https://www.tommoor.com/posts/2012/06/17/scaling-a-lean-startup-the-story-so-far</link>
     <description><![CDATA[ <div class="jsx-1234508262 md" data-reactroot=""></div> ]]></description>
     <pubDate>Sun, 17 Jun 2012 08:00:00 GMT</pubDate>
   </item>
@@ -211,7 +211,7 @@
   <item>
     <guid>2012/05/30/realtime-analytics-at-buffer-with-mongodb</guid>
     <title>Realtime Analytics at Buffer with MongoDB</title>
-    <link>https://www.getoutline.com/changelog/2012/05/30/realtime-analytics-at-buffer-with-mongodb</link>
+    <link>https://www.tommoor.com/posts/2012/05/30/realtime-analytics-at-buffer-with-mongodb</link>
     <description><![CDATA[ <div class="jsx-1234508262 md" data-reactroot=""></div> ]]></description>
     <pubDate>Wed, 30 May 2012 08:00:00 GMT</pubDate>
   </item>
