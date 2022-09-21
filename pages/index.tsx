@@ -16,19 +16,20 @@ export default function Home() {
           <a href="https://www.getoutline.com?ref=tommoor" target="_blank">
             Outline
           </a>{" "}
-          and contributing to{" "}
-          <a href="https://github.com/tommoor" target="_blank">
-            open source
+          and{" "}
+          <a href="https://linear.app?ref=tommoor" target="_blank">
+            Linear
           </a>
           . Recently I was principal engineer at{" "}
-          <a href="https://www.abstract.com?ref=tommoor" target="_blank">
+          <a href="https://www.abstract.com" target="_blank">
             Abstract
           </a>
           . Find me on{" "}
           <a href="https://www.twitter.com/tommoor" target="_blank">
             Twitter
-          </a>{" "}
-          or send a friendly <a href="mailto:tom.moor@gmail.com">Email</a>.
+          </a>
+          , somewhere in NYC, or send a friendly{" "}
+          <a href="mailto:tom.moor@gmail.com">Email</a>.
         </p>
       </main>
 
