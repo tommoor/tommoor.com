@@ -47,7 +47,7 @@ export default function Layout({
         <title>{fullTitle}</title>
         <link
           rel="shortcut icon"
-          href="//www.gravatar.com/avatar/166e0b975c36bbe15caa65209940035c.png"
+          href="https://www.gravatar.com/avatar/166e0b975c36bbe15caa65209940035c.png"
         />
         <link
           rel="stylesheet"
