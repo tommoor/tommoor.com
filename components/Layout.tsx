@@ -67,6 +67,7 @@ export default function Layout({
           title="RSS"
           href="/rss.xml"
         />
+        <link rel="me" href="https://subculture.chat/@tom" title="Mastodon" />
         <meta name="theme-color" content="#FFFFFF" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="referrer" content="origin" />
