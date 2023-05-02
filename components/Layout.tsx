@@ -46,10 +46,6 @@ export default function Layout({
       <Head>
         <title>{fullTitle}</title>
         <link
-          rel="shortcut icon"
-          href="https://www.gravatar.com/avatar/166e0b975c36bbe15caa65209940035c.png"
-        />
-        <link
           rel="stylesheet"
           href="https://unpkg.com/purecss@2.0.3/build/base-min.css"
         />
