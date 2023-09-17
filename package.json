@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --port=4000",
+    "dev": "NODE_OPTIONS=--openssl-legacy-provider next dev --port=4000",
     "build": "next build",
     "start": "next start",
-    "deploy": "/bin/sh deploy.sh",
+    "deploy": "NODE_OPTIONS=--openssl-legacy-provider /bin/sh deploy.sh",
     "lint": "yarn eslint pages/*.tsx  components/*.tsx"
   },
   "dependencies": {
