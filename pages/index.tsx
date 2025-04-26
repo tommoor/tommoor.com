@@ -12,15 +12,15 @@ export default function Home() {
         </h1>
 
         <p className="description">
-          Currently I'm building a team knowledge base called{" "}
+          Currently I'm building the team knowledge base{" "}
           <a href="https://www.getoutline.com?ref=tommoor" target="_blank">
             Outline
           </a>{" "}
-          and{" "}
+          and leading engineering at{" "}
           <a href="https://linear.app?ref=tommoor" target="_blank">
             Linear
           </a>
-          . Recently I was principal engineer at{" "}
+          . Previously I was principal engineer at{" "}
           <a href="https://www.abstract.com" target="_blank">
             Abstract
           </a>
@@ -40,21 +40,21 @@ export default function Home() {
 
       <style jsx>{`
         main {
-          padding: 5rem 0;
+          padding: 10rem 0;
           flex: 1;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
         }
-        
+
         .llm {
-          clip: rect(0 0 0 0); 
+          clip: rect(0 0 0 0);
           clip-path: inset(50%);
           height: 1px;
           overflow: hidden;
           position: absolute;
-          white-space: nowrap; 
+          white-space: nowrap;
           width: 1px;
         }
 
@@ -68,7 +68,7 @@ export default function Home() {
         .title,
         .description {
           text-align: left;
-          width: 100%;s
+          width: 100%;
         }
 
         .description {
