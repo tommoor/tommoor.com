@@ -21,12 +21,12 @@ export default function Home() {
             Linear
           </a>
           . Previously I was principal engineer at{" "}
-          <a href="https://www.abstract.com" target="_blank">
+          <a href="https://www.linkedin.com/company/abstract-app" target="_blank">
             Abstract
           </a>
           . Find me on{" "}
-          <a href="https://www.twitter.com/tommoor" target="_blank">
-            Twitter
+          <a href="https://x.com/tommoor" target="_blank">
+            X
           </a>
           , somewhere in NYC, or send a friendly{" "}
           <a href="mailto:tom.moor@gmail.com">Email</a>.
