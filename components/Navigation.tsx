@@ -27,8 +27,8 @@ export default function Navigation({ noHome }) {
           </Link>
         </li>
         <li>
-          <MenuItem href="https://www.twitter.com/tommoor" target="_blank">
-            Twitter
+          <MenuItem href="https://x.com/tommoor" target="_blank">
+            X
           </MenuItem>
         </li>
       </ul>
