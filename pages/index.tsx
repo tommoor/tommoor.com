@@ -21,7 +21,10 @@ export default function Home() {
             Linear
           </a>
           . Previously I was principal engineer at{" "}
-          <a href="https://www.linkedin.com/company/abstract-app" target="_blank">
+          <a
+            href="https://www.linkedin.com/company/abstract-app"
+            target="_blank"
+          >
             Abstract
           </a>
           . Find me on{" "}
