@@ -1,0 +1,132 @@
+<!--
+  Source for /public/images/og-image.png (1200x630).
+
+  Regenerate with headless Chrome, rendering in a taller window because the
+  headless window reserves space for browser chrome, then cropping back:
+
+    chrome --headless=new --force-device-scale-factor=2 --window-size=1200,760 \
+      --screenshot=og-raw.png scripts/og-image.html
+
+  ...then crop the top 2400x1260 and resize to 1200x630.
+-->
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      @font-face {
+        font-family: "HK Grotesk";
+        src: url("../public/fonts/HKGrotesk-Bold.woff2") format("woff2");
+        font-weight: 600;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "HK Grotesk";
+        src: url("../public/fonts/HKGrotesk-Regular.woff2") format("woff2");
+        font-weight: 400;
+        font-style: normal;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        width: 1200px;
+        height: 630px;
+      }
+
+      body {
+        background: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 96px;
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+          Helvetica Neue, sans-serif;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .accent {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 12px;
+        background: #328aff;
+      }
+
+      .glow {
+        position: absolute;
+        top: -220px;
+        right: -180px;
+        width: 620px;
+        height: 620px;
+        border-radius: 50%;
+        background: radial-gradient(
+          circle,
+          rgba(50, 138, 255, 0.16) 0%,
+          rgba(50, 138, 255, 0) 70%
+        );
+      }
+
+      h1 {
+        font-family: "HK Grotesk", sans-serif;
+        font-weight: 600;
+        font-size: 104px;
+        line-height: 1;
+        letter-spacing: -0.02em;
+        color: #181a1b;
+      }
+
+      p {
+        margin-top: 32px;
+        font-size: 36px;
+        line-height: 1.35;
+        color: #5e6573;
+        max-width: 900px;
+      }
+
+      .footer {
+        position: absolute;
+        left: 96px;
+        bottom: 72px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        font-size: 28px;
+        color: #328aff;
+        font-weight: 500;
+      }
+
+      .footer .dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: #c5ccd3;
+      }
+
+      .footer .muted {
+        color: #c5ccd3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="accent"></div>
+    <div class="glow"></div>
+    <h1>Tom Moor</h1>
+    <p>
+      Founder and full-stack software engineer with a passion for product design
+      and sweating the details.
+    </p>
+    <div class="footer">
+      <span>tommoor.com</span>
+      <span class="dot"></span>
+      <span class="muted">@tommoor</span>
+    </div>
+  </body>
+</html>
