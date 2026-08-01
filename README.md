@@ -9,8 +9,13 @@ yarn dev
 
 ## Deployment
 
-To push changes to the production website:
+Merging to `main` builds the site and deploys it to GitHub Pages via the
+[Deploy workflow](.github/workflows/deploy.yml). The workflow can also be run
+manually from the Actions tab.
+
+To produce the static site locally:
 
 ```
-yarn deploy
+yarn build
+yarn next export
 ```
