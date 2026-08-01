@@ -5,13 +5,20 @@ import Head from "next/head";
 import Footer from "components/Footer";
 import Navigation from "components/Navigation";
 import MenuItem from "components/MenuItem";
-import { spacing, colors, typography } from "theme";
+import { spacing, colors, palette, typography } from "theme";
 
 ReactGA.initialize("UA-1703053-5");
+
+const domain = "https://www.tommoor.com";
+const defaultDescription =
+  "Tom Moor is a founder and full-stack software engineer with a passion for product design and sweating the details.";
+const defaultImage = `${domain}/images/og-image.png`;
 
 type Props = {
   title?: string;
   pageTitle?: string;
+  description?: string;
+  image?: string;
   background?: string;
   color?: string;
   header?: React.ReactNode;
@@ -24,6 +31,8 @@ type Props = {
 export default function Layout({
   title,
   pageTitle,
+  description = defaultDescription,
+  image = defaultImage,
   header,
   hero,
   background = "transparent",
@@ -64,7 +73,20 @@ export default function Layout({
           href="/rss.xml"
         />
         <link rel="me" href="https://subculture.chat/@tom" title="Mastodon" />
-        <meta name="theme-color" content="#FFFFFF" />
+        {/* Keys are required so that next/head doesn't dedupe these two by name */}
+        <meta
+          key="theme-color-light"
+          name="theme-color"
+          media="(prefers-color-scheme: light)"
+          content={palette.light.background}
+        />
+        <meta
+          key="theme-color-dark"
+          name="theme-color"
+          media="(prefers-color-scheme: dark)"
+          content={palette.dark.background}
+        />
+        <meta name="color-scheme" content="light dark" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="referrer" content="origin" />
         <meta name="site_name" property="og:site_name" content="Tom Moor" />
@@ -74,13 +96,30 @@ export default function Layout({
           property="og:title"
           content={resolvedTitle || siteTitle}
         />
-        <meta name="twitter:card" content="summary" />
+        <meta
+          name="description"
+          property="og:description"
+          content={description}
+        />
+        <meta name="image" property="og:image" content={image} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content={siteTitle} />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@tommoor" />
         <meta name="twitter:domain" content="tommoor.com" />
         <meta name="twitter:title" content={resolvedTitle || siteTitle} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content={image} />
         <link
           href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.css"
           rel="stylesheet"
+          media="(prefers-color-scheme: light)"
+        />
+        <link
+          href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-tomorrow.min.css"
+          rel="stylesheet"
+          media="(prefers-color-scheme: dark)"
         />
       </Head>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-core.min.js"></script>
@@ -159,6 +198,31 @@ export default function Layout({
       </style>
       <style global jsx>
         {`
+          :root {
+            color-scheme: light dark;
+            --primary: ${palette.light.primary};
+            --background: ${palette.light.background};
+            --background-secondary: ${palette.light.backgroundSecondary};
+            --border: ${palette.light.border};
+            --text: ${palette.light.text};
+            --text-secondary: ${palette.light.textSecondary};
+            --text-tertiary: ${palette.light.textTertiary};
+            --text-menu: ${palette.light.textMenu};
+          }
+
+          @media (prefers-color-scheme: dark) {
+            :root {
+              --primary: ${palette.dark.primary};
+              --background: ${palette.dark.background};
+              --background-secondary: ${palette.dark.backgroundSecondary};
+              --border: ${palette.dark.border};
+              --text: ${palette.dark.text};
+              --text-secondary: ${palette.dark.textSecondary};
+              --text-tertiary: ${palette.dark.textTertiary};
+              --text-menu: ${palette.dark.textMenu};
+            }
+          }
+
           .container {
             max-width: 1140px;
             width: 90vw;
@@ -175,7 +239,7 @@ export default function Layout({
           select,
           textarea,
           .pure-g [class*="pure-u"] {
-            color: #121212;
+            color: ${colors.text};
             font-family: ${typography.fontFamily};
           }
 
@@ -184,6 +248,7 @@ export default function Layout({
             padding: 0;
             margin: 0;
             line-height: 1.6;
+            background: ${colors.background};
           }
 
           h1 {

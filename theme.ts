@@ -5,16 +5,41 @@ export const spacing = {
   xlarge: "48px",
 };
 
+// The raw palettes, only referenced when defining the CSS custom properties in
+// Layout – everywhere else use the semantic `colors` below so that components
+// automatically follow the system light/dark preference.
+export const palette = {
+  light: {
+    primary: "#328aff",
+    background: "#FFFFFF",
+    backgroundSecondary: "#F2F2F2",
+    border: "rgba(0, 0, 0, 0.2)",
+    text: "#181A1B",
+    textSecondary: "#5E6573",
+    textTertiary: "#C5CCD3",
+    textMenu: "rgba(0, 0, 0, 0.75)",
+  },
+  dark: {
+    primary: "#66A6FF",
+    background: "#181A1B",
+    backgroundSecondary: "#26282A",
+    border: "rgba(255, 255, 255, 0.2)",
+    text: "#E8EBED",
+    textSecondary: "#9BA3AF",
+    textTertiary: "#4A4F55",
+    textMenu: "rgba(255, 255, 255, 0.75)",
+  },
+};
+
 export const colors = {
-  primary: "#328aff",
-  white: "#FFFFFF",
-  almostBlack: "#181A1B",
-  black: "#000",
-  grey: "#E8EBED",
-  greyMid: "#C5CCD3",
-  text: "#181A1B",
-  textSecondary: "#5E6573",
-  textTertiary: "#C5CCD3",
+  primary: "var(--primary)",
+  background: "var(--background)",
+  backgroundSecondary: "var(--background-secondary)",
+  border: "var(--border)",
+  text: "var(--text)",
+  textSecondary: "var(--text-secondary)",
+  textTertiary: "var(--text-tertiary)",
+  textMenu: "var(--text-menu)",
 };
 
 export const typography = {

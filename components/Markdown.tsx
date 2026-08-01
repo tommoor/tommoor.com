@@ -17,8 +17,8 @@ export default function Markdown(props) {
           .md :global(blockquote) {
             margin-left: 0;
             margin-right: 0;
-            background-color: #f2f2f2;
-            border-left: 6px solid #f2f2f2;
+            background-color: ${colors.backgroundSecondary};
+            border-left: 6px solid ${colors.backgroundSecondary};
             padding: 15px 30px 15px 15px;
             font-style: italic;
             font-size: 16px;
@@ -35,7 +35,7 @@ export default function Markdown(props) {
           .md :global(img) {
             display: block;
             max-width: 100%;
-            box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 0 1px ${colors.border};
             border-radius: 8px;
             margin: 2em auto;
           }
@@ -46,7 +46,7 @@ export default function Markdown(props) {
 
           .md :global(code) {
             font-size: 15px;
-            background: #f2f2f2;
+            background: ${colors.backgroundSecondary};
             padding: 2px 4px;
             border-radius: 2px;
           }

@@ -34,7 +34,6 @@ export default function Home() {
           , somewhere in NYC, or send a friendly{" "}
           <a href="mailto:tom.moor@gmail.com">Email</a>.
         </p>
-
       </main>
 
       <style jsx>{`

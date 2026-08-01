@@ -23,7 +23,7 @@ export default class MenuItem extends React.Component<{
               align-items: center;
               padding: ${spacing.small} 0;
               margin: 0 ${spacing.medium};
-              color: rgba(0, 0, 0, 0.75);
+              color: ${colors.textMenu};
               text-decoration: none;
               white-space: nowrap;
               min-height: 40px;
